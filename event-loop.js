@@ -32,3 +32,26 @@ function checkAge(){
     console.log(111)
 
 }
+const delay = (name, time)=>{
+    setTimeout(()=>{
+        console.log(`Hello ${name}`);
+
+    }, time)
+}
+delay('Alice', 2000)
+
+function foo(){
+    // throw new Error('opps!');
+    console.log('Foo');    
+}
+
+function bar(){
+    foo();
+    console.log('Bar');
+}
+
+function baz(){
+    bar();
+    console.log('Baz')
+}
+baz()
