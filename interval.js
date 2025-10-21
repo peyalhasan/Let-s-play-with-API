@@ -1,7 +1,7 @@
 
 
 const clearTime = setTimeout(() => {
-    console.log('This is interval.js');
+    // console.log('This is interval.js');
     clearTimeout(clearTime)    
 }, 5000);
 
@@ -11,5 +11,5 @@ const intervalId =  setInterval(() =>{
     if(count > 6){
         clearInterval(intervalId)
     }
-    console.log(count, "Counted")
+    // console.log(count, "Counted")
 }, 2000)
